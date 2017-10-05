@@ -4,7 +4,7 @@
    <div class="row">
     <img src="pictures/logo2.png" alt="logo" class="col-sm-1 col-xs-12 logo"/>
     <h2 class="col-sm-4 col-xs- mll">MyLittleLibrary</h2>
-    <form action="head.php" method="post" class="col-sm-5 col-xs-12 connexion_bloc">
+    <form action="#" method="post" class="col-sm-5 col-xs-12 connexion_bloc">
         <input type="text" name="pseudo" placeholder="Pseudo">
         <input type="password" name="password" placeholder="mot de passe">
         <input type="submit" name="btnSubmit" value="Connexion">
