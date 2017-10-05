@@ -1,6 +1,5 @@
 <?php
 include "head.php";
-include "header.php";
 
 // Redirection si déjà connecté
 if (!empty($_SESSION['pseudo'])){
