@@ -8,7 +8,7 @@ require 'vendor/autoload.php';
     // Param
     $_SESSION['pathDB'] = "mysql:host=localhost;dbname=MyLittleLibrary;charset=utf8";
     $_SESSION['userDB'] = "root";
-    $_SESSION['passwordDB'] = "mysql01"; // Remplacer par votre password
+    $_SESSION['passwordDB'] = "azerty1234"; // Remplacer par votre password
     // Connection
     include "function/connect.php";
     $bdd = connect($_SESSION['pathDB'], $_SESSION['userDB'], $_SESSION['passwordDB']);
