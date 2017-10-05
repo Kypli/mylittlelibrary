@@ -11,9 +11,8 @@ function connect(string $db, string $user, string $password) {
 }
 
 function update($statement, $conditions){
-
-//    connect("mysql:host=localhost;dbname=MyLittleLibrary;charset=utf8", "root","mysql01");
-//    $req = $_SESSION['db']->prepare($statement);
-//    $req->execute($conditions) or die(print_r($req->errorInfo()));
-//    $req->closeCursor();
+    $bdd = connect($_SESSION['pathDB'], $_SESSION['userDB'],$_SESSION['passwordDB']);
+    $req = $bdd->prepare($statement);
+    $req->execute($conditions) or die(print_r($req->errorInfo()));
+    $req->closeCursor();
 }

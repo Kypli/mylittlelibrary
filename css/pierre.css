@@ -3,56 +3,12 @@
 /*	STRUCTURE HTML	*/
 /* **************** */
 
-	body
-	{
-		padding-top: 10px;
-		padding-bottom: 10px;
-		background-image: url('image/fond/fond_1.png');
-		background-repeat: repeat;
-		background-color: #D0E4FE;
-	}
-
-	h1
-	{
-		color: orange;
-		text-align: center;
-	}
-
-	nav
-	{
-
-	}
-
-	header
-	{
-
-	}
-
-	section
-	{
-
-	}
-
-	aside
-	{
-
-	}
-
-	footer
-	{
-
-	}
 
 
 /* **************** */
 /*    Class & ID	*/
 /* **************** */
 
-	.fond_neutre
-	{
-		padding: 10px;
-		background-color: #d0e4fe;
-	}
 
 
 
@@ -205,15 +161,15 @@ IDEM AVEC PADDING
 /* **************** */
 /*	EFFET BOOTSTRAP	*/
 /* **************** */
-/*	body
-	{
-		padding-top: 10px;
-	}
+	/*body*/
+	/*{*/
+		/*padding-top: 10px;*/
+	/*}*/
 
-	[class*="col-"], footer {
-		background-color: lightgreen;
-		border: 2px solid black;
-		border-radius: 6px;
-		line-height: 40px;
-		text-align: center;
-	} */
+	/*[class*="col-"], footer {*/
+		/*background-color: lightgreen;*/
+		/*border: 2px solid black;*/
+		/*border-radius: 6px;*/
+		/*line-height: 40px;*/
+		/*text-align: center;*/
+	/*}*/
