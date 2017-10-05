@@ -1,9 +1,6 @@
 <?php
 session_start();
 
-// Autoload GuzzleHttp
-require 'vendor/autoload.php';
-
 // Connection DB
     // Param
     $_SESSION['pathDB'] = "mysql:host=localhost;dbname=MyLittleLibrary;charset=utf8";
@@ -12,6 +9,10 @@ require 'vendor/autoload.php';
     // Connection
     include "function/connect.php";
     $bdd = connect($_SESSION['pathDB'], $_SESSION['userDB'], $_SESSION['passwordDB']);
+
+// Autoload GuzzleHttp
+require 'vendor/autoload.php';
+require 'function/api.php';
 
 // CleanPost
 if($_POST) {
