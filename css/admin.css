@@ -1,0 +1,41 @@
+.hidden {
+	display: none;
+}
+
+.validation {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: blue;
+	text-align: center;
+	font-size: 30px;
+}
+
+.limitPicture {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.limitInput {
+	max-height: 30px;
+	max-height: 30px;
+}
+
+.spaceBack {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.bar {
+	border: 2px lightgrey inset;
+}
+
+
+[class*="col-"], footer {
+	/*background-color: lightgreen;*/
+	/*border: 2px solid black;*/
+	/*border-radius: 6px;*/
+	/*line-height: 40px;*/
+	text-align: center;
+}

@@ -1,0 +1,415 @@
+/* *_*_*_*_*_* DEBUT CSS STEVEN *_*_*_*_*_* */
+
+
+.test{
+    width : 150px;
+    max-width : 150px;
+    height: 150px;
+    max-height: 150px;
+}
+
+@font-face
+{
+    font-family: 'weekend';
+    src: url('../fonts/weekend.ttf') format('ttf');
+    src: url('../fonts/weekend.woff') format('woff');
+    src: url('../fonts/weekend.woff2') format('woff2');
+
+    font-family: 'hacked';
+    src: url('../fonts/hacked.ttf') format('ttf');
+    src: url('../fonts/hacked.woff') format('woff');
+    src: url('../fonts/hacked.woff2') format('woff2');
+
+    font-family: 'bebas';
+    src: url('../fonts/Bebas.otf') format('otf');
+    src: url('../fonts/Bebas.woff') format('woff');
+    src: url('../fonts/Bebas.woff2') format('woff2');
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.fondsite
+{
+
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+    background: url(../images/fondd.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+.nav-transparent {
+
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    text-align: center;
+    font-family: "bebas";
+    text-shadow: 2px 2px 4px black;
+}
+
+.nav-a>li
+{
+    position: relative;
+    padding: 70px 15px;
+    font-size: 40px;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a
+{
+    text-decoration : none;
+    color: white;
+}
+
+.nav > li > a:hover {
+    color: #ff53e0 !important;
+}
+
+.nav > li > a:active {
+    color: #ff53e0 !important;
+}
+.nav > li > a:focus {
+    color: #ff53e0 !important;
+}
+
+.navbar-nav
+{
+    display: inline-block;
+    float: none;
+    margin: 0;
+}
+
+.accueil
+{
+    margin-top: 150px;
+}
+
+@media (max-width: 768px)
+
+{
+    .imglogo
+    {
+        margin-top: 8vh;
+    }
+
+    .nav-a>li
+    {
+        position: relative;
+        padding: 5px 0px;
+        font-size: 30px;
+        color: white;
+        }
+
+        .navbar-collapse
+        {
+            border: none;
+        }
+    } 
+    
+    @media (min-width: 768px) and (max-width: 1024px) 
+    
+    {     
+    .nav-a>li
+        {
+        position: relative;
+        padding: 20px 0px;
+        font-size: 30px;
+        color: white;
+    }
+
+} /* FIN DU MEDIA */
+
+.flecheverslebas {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgba(250, 250, 250, 0.2);
+    font-size: 6em;
+}
+
+.flecheverslebas span:hover {
+    color: rgba(250, 250, 250, 0.8);
+}
+.flecheverslebas span:active {
+    color: #ff53e0;
+}
+
+
+/* *_*_*_*_*_* FIN CSS STEVEN *_*_*_*_*_* */
+
+
+/* *_*_*_*_*_* DEBUT CSS PIERRE *_*_*_*_*_* */
+
+    .backgroundgames
+    {
+        min-height: 100vh;
+        margin:0;
+        padding:0;
+        background: url(../images/background3.jpg) no-repeat center fixed;
+        -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+        background-size: cover; /* version standardisée */
+    }
+
+    .marginnavb
+    {
+        margin-top: 100px;
+    }
+
+    .thumbnailgame
+    {
+        cursor: pointer;
+        background-color: rgba(255,255,255,0.8);
+    }
+
+    .thumbnailgame h3
+    {
+        text-align: center;
+        color: black;
+    }
+
+    .thumbnailgame p
+    {
+        text-align: justify;
+        color: black;
+    }
+
+    /* MODALES */
+
+    .justify
+    {
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .center_img
+    {
+        width: 100%;
+        margin-left: 25px;
+        max-width: 530px;
+        max-height: 530px;
+    }
+
+    @media screen and (max-width: 768px)
+    {
+
+        .center_img
+        {
+            margin-left: 0px;
+        }
+
+    }
+
+
+/* *_*_*_*_*_* FIN CSS PIERRE *_*_*_*_*_* */
+
+
+/* ----- CSS PAUL ----- */
+
+.backgroundsnack {
+	min-height: 100vh;
+    margin:0;
+    padding:0;
+	background: url(../images/background3.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+.thumb{
+    height: 50px;
+}
+
+.thumbnail-u{
+    padding: 5px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+.panel .panel-heading, .panel-default {
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+
+.nav-transparent-b {
+
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    text-align: center;
+    font-family: "bebas";
+    text-shadow: 2px 2px 4px black;
+}
+
+.nav-b>li
+{
+    position: relative;
+    padding: 10px 15px;
+    font-size: 40px;
+    color: white;
+}
+
+.navsticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: -95px;
+}
+
+
+@media (max-width: 768px)
+
+{
+    .thumbnail-u {
+        margin-top: 40px;
+    }
+
+    .marginnavb {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px)
+
+{
+    .nav-b>li
+    {
+        font-size:28px;
+    }
+}
+
+
+.scrollable-section {
+    border-bottom:1px solid #666;
+}
+/* ----- FIN CSS PAUL ----- */
+
+/* ----- CSS FOTER ----- */
+.backgroundinfos {
+    position: relative;
+    min-height: 100vh;
+    margin:0;
+    background: url(../images/background3.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+#map {
+    height: 340px;
+    width: 100%;
+}
+
+
+.footer {
+    border: none;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+.footertransp {
+    background-color: rgba(0,0,0,0.4) !important;
+    color: white;
+    border: none;
+}
+
+.footerinfos {
+    color: white;
+}
+
+.imglogofooter {
+    width: 50vw;
+    padding-top: 8vw;
+}
+
+.social:hover {
+        color: red;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #36acff;
+
+}
+
+footer a:focus {
+    color: #36acff;
+}
+
+footer a:active {
+    color: white;
+    text-decoration: none;
+}
+/* ---------- MEDIAS FOR RESPONSIVE ---------- */
+
+@media (max-width: 767px) { /* MEDIA FOR COL-XS*/
+
+    #map {
+        height: 200px;
+    }
+
+    table{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+.footer{
+    position: relative;
+    }
+
+}
+
+@media (min-width: 768px) AND (max-width: 991px){ /* MEDIA FOR COL-SM*/
+
+    .backgroundinfos{
+        padding-top: 100px;
+    }
+
+    .footer{
+        position: relative;
+    }
+
+    #map {
+        height: 300px;
+    }
+}
+
+@media (min-width: 992px) AND (max-width: 1199px){ /* MEDIA FOR COL-MD*/
+
+    .imglogofooter {
+        padding-top: 10vw;
+    }
+
+
+}
+
+@media (min-width: 1200px) { /* MEDIA FOR COL-LG */
+
+}
+
+/* ---------- END OF MEDIAS FOR RESPONSIVE ---------- *
+/* ----- FIN CSS FOOTER ----- */
+
+ /* FIN DU MEDIA */
+.br {
+    border: solid red 2px;
+}
+
+
+/*MODAL POUR MENTIONS LEGALES*/
+.modalcolor{
+    background: rgba(250, 250, 250, 0.8);
+    color: black;
+}

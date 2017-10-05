@@ -1,0 +1,219 @@
+
+/* **************** */
+/*	STRUCTURE HTML	*/
+/* **************** */
+
+	body
+	{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-image: url('image/fond/fond_1.png');
+		background-repeat: repeat;
+		background-color: #D0E4FE;
+	}
+
+	h1
+	{
+		color: orange;
+		text-align: center;
+	}
+
+	nav
+	{
+
+	}
+
+	header
+	{
+
+	}
+
+	section
+	{
+
+	}
+
+	aside
+	{
+
+	}
+
+	footer
+	{
+
+	}
+
+
+/* **************** */
+/*    Class & ID	*/
+/* **************** */
+
+	.fond_neutre
+	{
+		padding: 10px;
+		background-color: #d0e4fe;
+	}
+
+
+
+/* **************** */
+/*		INFO	    */
+/* **************** */
+
+/*
+Si vous voulez que le texte ne dépasse pas des limites du paragraphe, il va falloir utiliser la propriété overflow.
+overflow, overflow-x(y) :
+    visible		(par défaut) : si le texte dépasse les limites de taille, il reste visible et sort volontairement du bloc.
+    hidden		si le texte dépasse les limites, il sera tout simplement coupé. On ne pourra pas voir tout le texte.
+    scroll		là encore, le texte sera coupé s'il dépasse les limites. Sauf que cette fois, le navigateur mettra en place des barres de défilement pour qu'on puisse lire l'ensemble du texte. C'est un peu comme un cadre à l'intérieur de la page.
+    auto		c'est le mode « pilote automatique ». En gros, c'est le navigateur qui décide de mettre ou non des barres de défilement (il n'en mettra que si c'est nécessaire). C'est la valeur que je conseille d'utiliser le plus souvent.
+    -moz-scrollbars-horizontal;
+
+
+Si vous voulez, vous pouvez demander à ce que les blocs aillent à la ligne lorsqu'ils n'ont plus la place
+flex-wrap :
+    nowrap : pas de retour à la ligne (par défaut)
+    wrap : les éléments vont à la ligne lorsqu'il n'y a plus la place
+    wrap-reverse : les éléments vont à la ligne lorsqu'il n'y a plus la place en sens inverse
+
+Filtre image
+    -webkit-filter: brightness(10); [contrast]
+    filter: brightness(10);
+
+
+.center				{ 	text-align: center;				}
+.bottom				{	text-align: bottom;				}
+.right				{	text-align: right;				}
+
+.cadrer				{	border:1px solid red; 			}
+
+.floatbottom		{	float : bottom;			    	}
+.floatright			{	float : right;					}
+.floatcenter		{	float : center;					}
+
+.conteneur			{	display: flex;					}
+
+.marg_top_10		{	margin-top: 10px;				}
+.marg_bottom_10		{	margin-bottom: 10px;			}
+.marg_left_10		{	margin-left: 10px;	    		}
+.marg_right_10		{	margin-right: 10px;	    		}
+
+IDEM AVEC PADDING
+
+.hidden				{	display: none;					}
+.cache 				{	background-image: none;			}
+.espace				{	letter-spacing: 45px;			}
+
+.taille8 			{	font-size: 8px;					}
+
+.barre 				{	text-decoration: line-through;	}
+.souligne			{   text-decoration: underline;		}
+.gras				{	font-weight: bold;				}
+.italique			{	font-style : italic;			}
+
+.longueur10  		{	width: 10px;					}
+.longueurMin10  	{	min-width: 10px;				}
+.longueurMax10  	{	max-width: 10px;				}
+
+.hauteur10          {	height: 10px;	    			}
+.hauteurMin10       {	min-height: 10px;	   			}
+.hauteurMax10       {	max-height: 10px;	   			}
+
+.noir				{	color: black; 					}
+
+.fondnoir			{	background-color: black; 		}
+
+.pointeur 			{	cursor: pointer;				}
+.pointeur_base		{	cursor: auto;					}
+
+.ascenseur			{	overflow: scroll;				}
+
+.pos_r				{	position: relative;				}
+.pos_a				{	position: absolute;				}
+
+.b_collapse			{	border-collapse: collapse;		}
+
+.hauteur_1			{	z-index: 1;						}
+
+.casse_mot			{	word-wrap: break-word;			}
+.deborde			{	overflow: auto;					}
+
+*/
+
+/* ***************** */
+/*	  CLIGNOTE	    */
+/* **************** */
+
+/*
+.blink_me {
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	animation-name: blinker;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+*/
+
+
+/*
+
+/* **************** */
+/*	Habiller un HR	*/
+/* **************** */
+
+/*border: 2px orange ridge;*/
+
+	/*none   : pas de bordure (par défaut)*/
+	/*hidden : bordure cachée*/
+	/*solid  : ligne pleine*/
+	/*double : ligne double (nécessite une taille de bordure de 3px minimum)*/
+	/*dashed : en tirets*/
+	/*dotted : en pointillés*/
+	/*inset  : effet 3D "enfoncé"*/
+	/*outset : effet 3D "surélevé"*/
+	/*ridge  : effet 3D "demi-rond"*/
+
+
+/* **************** */
+/*	EFFET BOOTSTRAP	*/
+/* **************** */
+/*	body
+	{
+		padding-top: 10px;
+	}
+
+	[class*="col-"], footer {
+		background-color: lightgreen;
+		border: 2px solid black;
+		border-radius: 6px;
+		line-height: 40px;
+		text-align: center;
+	} */
