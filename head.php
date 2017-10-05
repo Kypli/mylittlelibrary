@@ -6,12 +6,12 @@ require 'vendor/autoload.php';
 
 // Connection DB
     // Param
-    $_SESSION['pathDB'] = "mysql:host=localhost;dbname=MyLittleLibrary;charset=utf8";
+    /*$_SESSION['pathDB'] = "mysql:host=localhost;dbname=MyLittleLibrary;charset=utf8";
     $_SESSION['userDB'] = "root";
     $_SESSION['passwordDB'] = "mysql01"; // Remplacer par votre password
     // Connection
     include "function/connect.php";
-    $bdd = connect($_SESSION['pathDB'], $_SESSION['userDB'], $_SESSION['passwordDB']);
+    $bdd = connect($_SESSION['pathDB'], $_SESSION['userDB'], $_SESSION['passwordDB']);*/
 
 // CleanPost
 if($_POST) {
