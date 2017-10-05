@@ -7,8 +7,9 @@ include "footer.php";
 $method = 'get';
 $path = 'shows/display';
 $id = 1;
-var_dump($content = connectionApi($method, $path, $id));
-$list = getDetailContent($content);
-var_dump($list)
+$content = connectionApi($method, $path, $id);
+$apiDetails = getDetailContent($content);
+
+echo $apiDetails['id'];
 
 ?>
