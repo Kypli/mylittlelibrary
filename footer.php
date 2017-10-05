@@ -1,11 +1,12 @@
-<foooter>
+<footer>
 
 
-</foooter>
+</footer>
 
-<script src="bootstrap/js/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="bootstrap/js/stars.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
 
 </body>
 </html>

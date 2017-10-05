@@ -133,20 +133,10 @@ $( document ).ready(function() {
         }
 
     });
-
-
-
-
-
     $('#hearts-existing').on('starrr:change', function(e, value){
         $('#count-existing').html(value);
     });
 });
-
-
-
-
-
 $(function () {
     $('.button-checkbox').each(function () {
 

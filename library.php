@@ -3,87 +3,48 @@ include "head.php";
 include "header.php";
 
 // Si non connecté, redirection vers login.php
-if (empty($_SESSION['pseudo'])){
+if (empty($_SESSION['pseudo'])) {
     header('Location: login.php');
     exit();
 }
 ?>
-<div class="container">
-    <div class="row">
-    <h1>Série</h1>
-    <h2><strong>Titre de la série : <?php $_SESSION['title']?></strong></h2>
-    <p>Résumé: <?php $_SESSION['description'];?>
-    </p>
-
-</div>
-</div>
-<div class="container">
-
-    <h3>[Name] Lorem Ipsum</h3>
-    <div class="row lead evaluation">
-        <div id="colorstar" class="starrr ratable" ></div>
-        <span id="count">0</span> star(s) - <span id="meaning"> </span>
-
-        <!--
-                <div class='indicators' style="display:none">
-                    <div id='textwr'>What went wrong?</div>
-                    <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
-                    <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval" style="display:none;">
-
-                    <span class="button-checkbox">
-                        <button type="button" class="btn criteria" data-color="info">Punctuallity</button>
-                         <input type="checkbox" class="hidden"  />
-                        </span>
-                    <span class="button-checkbox">
-                        <button type="button" class="btn criteria" data-color="info">Assistance</button>
-                         <input type="checkbox" class="hidden"  />
-                        </span>
-                    <span class="button-checkbox">
-                        <button type="button" class="btn criteria" data-color="info">Knowledge</button>
-                         <input type="checkbox" class="hidden"  />
-                        </span>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <h1>Série</h1>
+            </div>
+            <div class="col-xs-6">
+                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Ajouter à
+                    mes favoris
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <h2><strong>Titre de la série : <?php $_SESSION['title'] ?></strong></h2>
+            <p>Résumé: <?php $_SESSION['description']; ?>
+            </p>
+        </div>
+        <div class="row">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
         </div>
 
-
+        <div class="rating rating2"><!--
+		--><a href="#5" title="Give 5 stars">★</a><!--
+		--><a href="#4" title="Give 4 stars">★</a><!--
+		--><a href="#3" title="Give 3 stars">★</a><!--
+		--><a href="#2" title="Give 2 stars">★</a><!--
+		--><a href="#1" title="Give 1 star">★</a>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-offset-md-1">
+        <textarea rows="15" cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </textarea>
+            </div>
+        </div>
     </div>
 
 
-
-    <h3>[Name] Lorem Ipsum</h3>
-    <div class="row lead evaluation">
-        <div id="colorstar" class="starrr ratable" ></div>
-        <span id="count">0</span> star(s) - <span id="meaning"> </span>
-
-<!--
-        <div class='indicators' style="display:none">
-            <div id='textwr'>What went wrong?</div>
-            <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
-            <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval"  style="display:none;">
-
-            <span class="button-checkbox">
-                <button type="button" class="btn" data-color="info">Punctuallity</button>
-                 <input type="checkbox" class="hidden"  />
-                </span>
-            <span class="button-checkbox">
-                <button type="button" class="btn" data-color="info">Assistance</button>
-                 <input type="checkbox" class="hidden"  />
-                </span>
-            <span class="button-checkbox">
-                <button type="button" class="btn" data-color="info">Knowledge</button>
-                 <input type="checkbox" class="hidden"  />
-                </span>
-        </div>-->
-
-
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<? include "footer.php";?>
+<?php include "footer.php"; ?>
