@@ -1,5 +1,5 @@
-<b<body>
-<h<header>
+<body>
+<header>
     <?php
 
     // Vérification d'inscription
@@ -65,7 +65,7 @@
                     <input type="password" name="password" placeholder="mot de passe">
                     <input type="submit" name="btnSubmit" value="Connexion">
                 </form>
-                <p class="col-sm-2 col-xs-12"><a href="login.php">inscription</a></p>
+                <p class="col-sm-2 col-xs-12"><a href="login.php" class="inscription">inscription</a></p>
             </div>
         </div>
         <?php
