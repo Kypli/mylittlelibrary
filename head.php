@@ -21,6 +21,12 @@ if($_POST) {
     }
 }
 
+//deconnexion
+if(!empty($_POST["deconnexion"])) {
+    unset($_SESSION["pseudo"]);
+    unset($_SESSION["password"]);
+}
+
 // Vérification si champs pseudo vide
 if (empty($_POST['pseudo']) && !empty($_POST['password'])) {
     $errors[] = 'Merci d\'inscrire votre pseudo';
