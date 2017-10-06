@@ -1,12 +1,6 @@
 <?php
 include "head.php";
 
-// Redirection si déjà connecté
-if (!empty($_SESSION['pseudo'])){
-    header('Location:index.php');
-    exit();
-}
-
 // Vérification d'inscription
 if (!empty($_POST['pseudo']) && !empty($_POST['password'])) {
 
@@ -29,7 +23,7 @@ if (!empty($_POST['pseudo']) && !empty($_POST['password'])) {
             )) or die(print_r($req->errorInfo()));
 
         // Récup id
-        $reponse = $bdd->query("SELECT UsersId FROM Users WHERE Pseudo = '".$_SESSION['pseudo']."' AND Password = '".$_SESSION['password']."' ORDER BY LibraryMoviesId ASC") or die(print_r($bdd->errorInfo()));
+        $reponse = $bdd->query("SELECT UsersId FROM Users WHERE Pseudo = '".$_SESSION['pseudo']."' AND Password = '".$_SESSION['password']."'") or die(print_r($bdd->errorInfo()));
         while ($data = $reponse->fetch()) { $_SESSION['id'] = $data['UsersId']; }$reponse->closeCursor();
 
         } else {
@@ -51,6 +45,13 @@ if (!empty($errors)) {
         </ul>
     </div>
     <?php
+}
+
+
+// Redirection si déjà connecté
+if (!empty($_SESSION['pseudo'])){
+    header('Location:index.php');
+    exit();
 }
 ?>
 

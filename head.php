@@ -25,6 +25,7 @@ if($_POST) {
 if(!empty($_POST["deconnexion"])) {
     unset($_SESSION["pseudo"]);
     unset($_SESSION["password"]);
+    unset($_SESSION["id"]);
 }
 
 // Vérification si champs pseudo vide
