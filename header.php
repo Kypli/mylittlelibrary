@@ -1,5 +1,5 @@
-<body>
-<header>
+<b<body>
+<h<header>
     <?php
 
     // Vérification d'inscription
@@ -41,9 +41,16 @@
         <div class="container-fluid header">
             <div class="row">
                 <img src="pictures/logo2.png" alt="logo" class="col-sm-1 col-xs-12 logo"/>
-                <h2 class="col-sm-4 col-xs- mll">MyLittleLibrary</h2>
-                <h2>Bienvenue <?= $_SESSION['pseudo'] ?></h2>
-                // Rajouter bouton déconnection
+                <h2 class="col-sm-4 col-xs-12 mll">MyLittleLibrary</h2>
+                <p class="col-sm-4 myname">Bienvenue <?= ucfirst($_SESSION['pseudo']) ?></br>
+                    <a class="button" href="list.php"> <button type="button">Mes Listes</button> </a>
+                    <a class="button" href="library.php"> <button type="button">Ma Librairie</button> </a>
+                </p>
+                <form action="#" method="post" class="col-sm-3 deconnect">
+                    <input type="text" style="display:none" name="deconnexion" value="deco"/>
+                    <input type="submit" value="Deconnexion"/>
+                </form>
+
             </div>
         </div>
         <?php
@@ -64,7 +71,6 @@
         <?php
     }
     ?>
-
 
 </header>
 

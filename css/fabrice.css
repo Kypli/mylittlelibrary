@@ -13,3 +13,19 @@
 .connexion_bloc {
     top: 30px;
 }
+
+.deconnect {
+    top: 40px;
+    right: -100px;
+}
+
+.myname {
+    left: -100px;
+    top: -40px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.button {
+    font-size: 0.5em;
+}

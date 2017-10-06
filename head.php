@@ -5,7 +5,7 @@ session_start();
     // Param
     $_SESSION['pathDB'] = "mysql:host=localhost;dbname=MyLittleLibrary;charset=utf8";
     $_SESSION['userDB'] = "root";
-    $_SESSION['passwordDB'] = "azerty1234"; // Remplacer par votre password
+    $_SESSION['passwordDB'] = "mysql01"; // Remplacer par votre password
     // Connection
     include "function/connect.php";
     $bdd = connect($_SESSION['pathDB'], $_SESSION['userDB'], $_SESSION['passwordDB']);
@@ -19,6 +19,12 @@ if($_POST) {
     foreach ($_POST as $key=>$value) {
         $cleanPost[$key] = trim(htmlentities($value));
     }
+}
+
+//deconnexion
+if(!empty($_POST["deconnexion"])) {
+    unset($_SESSION["pseudo"]);
+    unset($_SESSION["password"]);
 }
 
 // Vérification si champs pseudo vide
