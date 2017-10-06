@@ -17,7 +17,7 @@ if (!empty($_POST['seriePage'])){
 
 // Désactiver le bouton précédant
 if ($seriePage == 1){
-    $disabled = 'disabled="disabled"';
+    $disabled = 'style=\'display:none\'"';
 } else {
     $disabled = '';
 }

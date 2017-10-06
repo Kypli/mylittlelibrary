@@ -43,6 +43,7 @@
                 <img src="pictures/logo2.png" alt="logo" class="col-sm-1 col-xs-12 logo"/>
                 <h2 class="col-sm-4 col-xs-12 mll">MyLittleLibrary</h2>
                 <p class="col-sm-4 myname">Bienvenue <?= ucfirst($_SESSION['pseudo']) ?></br>
+                    <a class="button" href="index.php"> <button type="button">Retour accueil</button> </a>
                     <a class="button" href="list.php"> <button type="button">Mes Listes</button> </a>
                     <a class="button" href="library.php"> <button type="button">Ma Librairie</button> </a>
                 </p>

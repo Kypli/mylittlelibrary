@@ -4,7 +4,7 @@ include "header.php";
 
 // Si non connecté, redirection vers login.php
 if (empty($_SESSION['pseudo'])){
-    header('Location: login.php');
+    header('Location: index.php');
     exit();
 }
 ?>
@@ -18,9 +18,13 @@ if (empty($_SESSION['pseudo'])){
                     mes favoris</button>
             </div>
         </div>
+        <?php
+        $reponse = $bdd->query("SELECT * FROM LibraryMovies ORDER BY LibraryMoviesId ASC") or die(print_r($bdd->errorInfo()));
+        while ($data = $reponse->fetch()) {
+        ?>
         <div class="row">
             <div class="col-md-6">
-                <h2><strong>Titre de la série : <?php $_SESSION['title'] ?></strong></h2>
+                <h2><strong>Titre de la série : <?= $data['name'] ?></strong></h2>
             </div>
             <div class="col-md-6">
                 <label class="switch">
@@ -31,8 +35,7 @@ if (empty($_SESSION['pseudo'])){
         </div>
         <div class="row">
             <div class="resume">
-                <p>Résumé: <?php $_SESSION['description']; ?>
-                </p>
+                <p>Résumé: <?= $data['description']; ?></p>
             </div>
         </div>
     </div>
@@ -48,12 +51,11 @@ if (empty($_SESSION['pseudo'])){
     <div class="row">
         <div class="col-md-10 col-offset-md-1">
             <label class="comment">
-        <textarea rows="15" cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        <textarea rows="3" cols="50">ut aaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariacia deserunt mollit anim id est laborum
         </textarea>
             </label>
         </div>
     </div>
+<?php }$reponse->closeCursor();
 
-
-
-<?php include "footer.php"; ?>
+include "footer.php"; ?>

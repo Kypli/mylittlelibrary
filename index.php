@@ -11,11 +11,11 @@ include "welcome.php";
 //echo $betaSerieDetails['id'];
 
 
-$method = 'post';
-$artist = 'cher';
-$BetaSeriecontent = connectionApiLastFm($method, $artist);
-var_dump($betaSerieDetails = getDetailContentLastFm($BetaSeriecontent));
-echo $betaSerieDetails['name'];
-include "footer.php";
+//$method = 'post';
+//$artist = 'cher';
+//$BetaSeriecontent = connectionApiLastFm($method, $artist);
+//var_dump($betaSerieDetails = getDetailContentLastFm($BetaSeriecontent));
+//echo $betaSerieDetails['name'];
+//include "footer.php";
 
 ?>
