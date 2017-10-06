@@ -1,15 +1,33 @@
-.container-fluid{
-    padding-top: 20px;
-    padding-left: 180px;
+body{
+background-color: #F0FFF0;
 
 }
 .media-left, .text_music{
-    padding-left: 140px;
+    padding-left: 150px;
 }
 
+.area{
+    padding-bottom: 20px;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.music_zone2{
+    padding-top: 40px;
+}
 .media-left img{
-    width: 90%;
+    width: 100%;
     height: auto;
+    border-radius: 5px;
+}
+h2{
+    font-size: 3vh;
+}
+
+h3{
+    font-size: 2.5vh;
 }
 
 h4.media-heading
@@ -18,16 +36,17 @@ h4.media-heading
     font-size: 5vh;
 }
 p{
-    padding-top: 30px;
+    padding-top: 10px;
     text-align: justify;
-    font-size: 2.5vh;
-}
-.media-right img{
-    width: 120%;
-    height: auto;
-    padding-left: 140px;
+    font-size: 2vh;
 }
 
+.favoris_button {
+    padding-top: 17px;
+}
+.toggle_button{
+    padding-top: 28px;
+}
 .music_zone{
     padding-top: 40px;
 }
@@ -43,7 +62,7 @@ p{
 		 * Rating styles
 		 */
 .rating {
-    width: 226px;
+    width: 215px;
     margin: 0 auto 1em;
     font-size: 45px;
     overflow:hidden;
