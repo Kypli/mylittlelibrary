@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
 .header {
-    background-color: #5e5e5e;
+    background-image: radial-gradient(circle at top left, white, black);
 }
 
 .logo {
@@ -8,10 +11,20 @@
 
 .mll {
     font-size: 3em;
+    font-family: 'Bitter', serif;
 }
 
 .connexion_bloc {
     top: 30px;
+}
+
+.p_inscription {
+    top: 23px;
+}
+
+.inscription {
+    font-size: 1.2em;
+    color: white;
 }
 
 .deconnect {
@@ -21,11 +34,20 @@
 
 .myname {
     left: -100px;
-    top: -40px;
     text-align: center;
     font-size: 3em;
+    font-family: 'Arvo', serif;
 }
 
 .button {
     font-size: 0.5em;
+    color: black;
+}
+
+.welcome {
+    background-image: radial-gradient(circle at center, white, #8904B1);
+}
+
+.media-tittle {
+    font-family: 'Arvo', serif;
 }

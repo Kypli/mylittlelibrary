@@ -25,6 +25,26 @@
 }
 
 
+
+#decale
+{
+    margin-left: 12%;
+    margin-top: 20px;
+}
+
+.TableauListTr
+{
+    height: 60px;
+    background-color: #F5F5F5;
+}
+
+.ajout
+{
+    /*background-color: #32CD32;*/
+    background-image: radial-gradient(circle at top left, white, grey);
+}
+
+
 /* **************** */
 /*		INFO	    */
 /* **************** */

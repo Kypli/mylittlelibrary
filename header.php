@@ -1,5 +1,5 @@
-<b<body>
-<h<header>
+<body>
+<header>
     <?php
 
     // Vérification d'inscription
@@ -14,6 +14,9 @@
                 // Mettre en sessions
                 $_SESSION['pseudo'] = $cleanPost['pseudo'];
                 $_SESSION['password'] = $cleanPost['password'];
+                // Récup id
+                $reponse = $bdd->query("SELECT UsersId FROM Users WHERE Pseudo = '".$_SESSION['pseudo']."' AND Password = '".$_SESSION['password']."'") or die(print_r($bdd->errorInfo()));
+                while ($data = $reponse->fetch()) { $_SESSION['id'] = $data['UsersId']; }$reponse->closeCursor();
             } else {
                 $errors[] = 'Ce pseudo n\'existe pas';
             }
@@ -43,7 +46,6 @@
                 <img src="pictures/logo2.png" alt="logo" class="col-sm-1 col-xs-12 logo"/>
                 <h2 class="col-sm-4 col-xs-12 mll">MyLittleLibrary</h2>
                 <p class="col-sm-4 myname">Bienvenue <?= ucfirst($_SESSION['pseudo']) ?></br>
-                    <a class="button" href="index.php"> <button type="button">Retour accueil</button> </a>
                     <a class="button" href="list.php"> <button type="button">Mes Listes</button> </a>
                     <a class="button" href="library.php"> <button type="button">Ma Librairie</button> </a>
                 </p>
@@ -56,22 +58,19 @@
         </div>
         <?php
     } else {
-        ?>
-        <div class="container-fluid header">
-            <div class="row">
-                <img src="pictures/logo2.png" alt="logo" class="col-sm-1 col-xs-12 logo"/>
-                <h2 class="col-sm-4 col-xs- mll">MyLittleLibrary</h2>
-                <form action="#" method="post" class="col-sm-5 col-xs-12 connexion_bloc">
-                    <input type="text" name="pseudo" placeholder="Pseudo">
-                    <input type="password" name="password" placeholder="mot de passe">
-                    <input type="submit" name="btnSubmit" value="Connexion">
-                </form>
-                <p class="col-sm-2 col-xs-12"><a href="login.php">inscription</a></p>
-            </div>
-        </div>
-        <?php
-    }
     ?>
-
+    <div class="container-fluid header">
+        <div class="row">
+            <img src="pictures/logo2.png" alt="logo" class="col-sm-1 col-xs-12 logo"/>
+            <h2 class="col-sm-4 col-xs- mll">MyLittleLibrary</h2>
+            <form action="#" method="post" class="col-sm-5 col-xs-12 connexion_bloc">
+                <input type="text" name="pseudo" placeholder="Pseudo">
+                <input type="password" name="password" placeholder="mot de passe">
+                <input type="submit" name="btnSubmit" value="Connexion">
+            </form>
+            <p class="col-sm-2 col-xs-12 p_inscription"><a href="login.php" class="inscription">inscription</a></p>
+        </div>
+    </div>
+    <?php } ?>
 </header>
 
