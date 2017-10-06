@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  ven. 06 oct. 2017 à 13:24
+-- Généré le :  ven. 06 oct. 2017 à 13:45
 -- Version du serveur :  5.7.19-0ubuntu0.16.04.1
 -- Version de PHP :  7.0.22-0ubuntu0.16.04.1
 
@@ -64,13 +64,6 @@ CREATE TABLE `Favorite` (
   `LibraryProduct` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Déchargement des données de la table `Favorite`
---
-
-INSERT INTO `Favorite` (`FavoriteId`, `User`, `Library`, `LibraryProduct`) VALUES
-(13, 1, 1, 3);
-
 -- --------------------------------------------------------
 
 --
@@ -110,12 +103,10 @@ CREATE TABLE `LibraryMovies` (
 --
 
 INSERT INTO `LibraryMovies` (`LibraryMoviesId`, `user`, `name`, `description`, `genre`, `duration`) VALUES
-(1, 1, 'Scrubs', 'J.D. est un jeune médecin qui débute sa carrière dans l\'hôpital du Sacré-Coeur. Il vit avec son meilleur ami Turk', 3, '01:00:00'),
-(2, 1, 'Doctor House', 'C\'est un génie mais un salaud', 1, '01:00:00'),
-(3, 1, 'Prison Break', 'Michael Scofield s\'engage dans une véritable lutte contre la montre : son frère Lincoln est dans le couloir de la mort, en attente de son exécution. Persuadé de son innocence mais à court de solutions, Michael décide de se faire incarcérer à son tour dans le pénitencier d\'état de Fox River pour organiser leur évasion...', NULL, NULL),
-(4, 2, 'Stargate SG-1', 'Un anneau de trois mètres de diamètre fait d’un métal inconnu sur Terre constitue en fait une porte ouvrant un passage vers d’autres planètes. Des équipes de militaires et de scientifiques explorent ces différentes planètes, cherchant de nouvelles technologies pour combattre notamment les Goa’ulds, une espèce extraterrestre qui parasite des humains. Parmi ces équipes d’exploration, SG-1 devient la plus réputée, avec le colonel O’Neill, l’égyptologue Jackson, le major Carter et Teal’c, un Jaffa venant de Chulak, un autre monde.', NULL, NULL),
-(5, 1, 'How I Met Your Mother', 'Ted se remémore ses jeunes années, lorsqu\'il était encore célibataire. Il revoit avec nostalgie ses moments d\'égarements et de troubles, ses rencontres et ses recherches effrénées du Grand Amour.', NULL, NULL),
-(6, 1, 'Weeds', 'Dans une banlieue respectable de Los Angeles, les apparences sont parfois trompeuses. Les sales petits secrets des uns et des autres vont peu à peu se faire jour. Nancy Botwin, une mère célibataire, vend de la marijuana depuis la mort subite de son mari. C\'est sa façon à elle de subvenir aux besoins de sa famille...', NULL, NULL);
+(1, 1, 'Prison Break', 'Michael Scofield s\'engage dans une véritable lutte contre la montre : son frère Lincoln est dans le couloir de la mort, en attente de son exécution. Persuadé de son innocence mais à court de solutions, Michael décide de se faire incarcérer à son tour dans le pénitencier d\'état de Fox River pour organiser leur évasion...', NULL, NULL),
+(2, 2, 'Stargate SG-1', 'Un anneau de trois mètres de diamètre fait d’un métal inconnu sur Terre constitue en fait une porte ouvrant un passage vers d’autres planètes. Des équipes de militaires et de scientifiques explorent ces différentes planètes, cherchant de nouvelles technologies pour combattre notamment les Goa’ulds, une espèce extraterrestre qui parasite des humains. Parmi ces équipes d’exploration, SG-1 devient la plus réputée, avec le colonel O’Neill, l’égyptologue Jackson, le major Carter et Teal’c, un Jaffa venant de Chulak, un autre monde.', NULL, NULL),
+(3, 1, 'How I Met Your Mother', 'Ted se remémore ses jeunes années, lorsqu\'il était encore célibataire. Il revoit avec nostalgie ses moments d\'égarements et de troubles, ses rencontres et ses recherches effrénées du Grand Amour.', NULL, NULL),
+(4, 1, 'Weeds', 'Dans une banlieue respectable de Los Angeles, les apparences sont parfois trompeuses. Les sales petits secrets des uns et des autres vont peu à peu se faire jour. Nancy Botwin, une mère célibataire, vend de la marijuana depuis la mort subite de son mari. C\'est sa façon à elle de subvenir aux besoins de sa famille...', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -347,7 +338,7 @@ ALTER TABLE `Consumn`
 -- AUTO_INCREMENT pour la table `Favorite`
 --
 ALTER TABLE `Favorite`
-  MODIFY `FavoriteId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `FavoriteId` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `Library`
@@ -359,7 +350,7 @@ ALTER TABLE `Library`
 -- AUTO_INCREMENT pour la table `LibraryMovies`
 --
 ALTER TABLE `LibraryMovies`
-  MODIFY `LibraryMoviesId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `LibraryMoviesId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `LibraryMoviesGenre`
