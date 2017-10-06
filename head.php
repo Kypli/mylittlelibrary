@@ -36,8 +36,9 @@ if (!empty($_POST['pseudo']) && empty($_POST['password'])) {
 <head>
     <meta charset="UTF-8">
     <title>My little library</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all" href="css/pierre.css"/>
     <link rel="stylesheet" type="text/css" media="all" href="css/fabrice.css"/>
     <link rel="stylesheet" type="text/css" media="all" href="css/aurelie.css"/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
