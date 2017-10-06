@@ -1,15 +1,28 @@
 
 /* **************** */
-/*	STRUCTURE HTML	*/
-/* **************** */
-
-
-
-/* **************** */
 /*    Class & ID	*/
 /* **************** */
 
+.center
+{
+    text-align: center;
+}
 
+.espaceBot15
+{
+    margin-bottom: 50px;
+}
+
+.title
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.underline
+{
+    text-decoration: underline;
+}
 
 
 /* **************** */
